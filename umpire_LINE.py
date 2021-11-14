@@ -2,7 +2,11 @@ import requests
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver_path = '/app/.chromedriver/bin/chromedriver'
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')
+#※headlessにしている
+driver = webdriver.Chrome(options=options, executable_path=driver_path)
 
 url1 = "https://npb.jp/umpires/register/31133887.html"
 
