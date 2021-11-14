@@ -6,8 +6,9 @@ driver_path = '/app/.chromedriver/bin/chromedriver'
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 #※headlessにしている
-driver.set_window_size('1200', '1000')
 driver = webdriver.Chrome(options=options, executable_path=driver_path)
+driver.implicitly_wait(10)
+driver.set_window_size('1200', '1000')
 
 url1 = "https://npb.jp/umpires/register/31133887.html"
 
