@@ -14,7 +14,9 @@ url1 = "https://npb.jp/umpires/register/31133887.html"
 
 driver.get(url1)
 
-umpire_name = driver.find_element_by_css_selector("#layout > div > div > div.detail_unit > div > dl > dt").text
+#driver.find_element(by=By.XPATH, value="//input[@type='text']")
+
+umpire_name = driver.find_element(By.cssSelector,value="//input[#layout > div > div > div.detail_unit > div > dl > dt]".text)
 
 
 message = umpire_name
