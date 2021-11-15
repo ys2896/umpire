@@ -17,7 +17,7 @@ driver.get(url1)
 #driver.find_element(by=By.XPATH, value="//input[@type='text']")
 #driver.findElement(By.cssSelector("#cheese #cheddar"));
 
-umpire_name = driver.find_Element(By.cssSelector,"#layout > div > div > div.detail_unit > div > dl > dt")
+umpire_name = driver.find_element(By.cssSelector,"#layout > div > div > div.detail_unit > div > dl > dt")
 
 
 message = umpire_name
